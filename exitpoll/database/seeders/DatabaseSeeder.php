@@ -16,9 +16,9 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Tim',
-            'email' => 'tim.maurizio@gmail.com',
-            'password' => bcrypt('Afblijven!'), 
+            'name' => 'admin',
+            'email' => 'admin@example.com',
+            'password' => bcrypt('password!'), 
         ]);
 
         $this->call([PoliticalPartySeeder::class, TokenSeeder::class ]);
